@@ -1,0 +1,45 @@
+#score { text-align: center; }
+
+#normal-background {
+  width: 600px;
+  margin: auto;
+  position: fixed;
+  z-index: -1;
+}
+
+#car {
+  height: 75px;
+  width: 200px;
+  top: 225px;
+  position: relative;
+  background-image: url("./character.GIF");
+  background-position: -200px -75px ;
+  background-size: 200px 75px;
+}
+
+#fire {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: 175px;
+  left: 550px;
+  background-image: url("./fire-1.png");
+  background-size: cover;
+  animation: fire 3s infinite;
+}
+
+@keyframes fire {
+  0%{left: 550px;}
+  100%{left: 0px;}
+}
+
+.jump-animation {
+  animation: jump 1s;
+}
+
+@keyframes jump {
+  0%{top: 225px;}
+  50%{top: 50px;}
+  75%{top: 50px;}
+  100%{top: 225px;}
+}
